@@ -1,0 +1,441 @@
+{
+  "id": "b859fe3f-dbd7-4642-9e74-6bf45f34952d",
+  "version": "2.0",
+  "name": "DZ-24_27-1",
+  "url": "https://www.saucedemo.com",
+  "tests": [{
+    "id": "1fe18798-0ec1-408a-a7c0-f2fdf149247a",
+    "name": "test_text_standart",
+    "commands": [{
+      "id": "3bda339f-0ac8-428c-be08-d6db88c91633",
+      "comment": "Open web site",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "14e5cb2a-d1f3-462f-ab4f-fdf9f6c18aac",
+      "comment": "Change window size",
+      "command": "setWindowSize",
+      "target": "1000x800",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "90933731-393e-4835-ba96-4cfa57935461",
+      "comment": "",
+      "command": "type",
+      "target": "id=user-name",
+      "targets": [
+        ["css=*[data-test=\"username\"]", "css:data-attr"],
+        ["id=user-name", "id"],
+        ["name=user-name", "name"],
+        ["css=#user-name", "css:finder"],
+        ["xpath=//input[@id='user-name']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "standard_user"
+    }, {
+      "id": "6f37d8aa-5acf-4ef7-b46d-72a9920b1606",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["css=*[data-test=\"password\"]", "css:data-attr"],
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "secret_sauce"
+    }, {
+      "id": "157e9a23-779f-4591-bd67-2928df7ed353",
+      "comment": "",
+      "command": "click",
+      "target": "css=*[data-test=\"login-button\"]",
+      "targets": [
+        ["css=*[data-test=\"login-button\"]", "css:data-attr"],
+        ["id=login-button", "id"],
+        ["name=login-button", "name"],
+        ["css=#login-button", "css:finder"],
+        ["xpath=//input[@id='login-button']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "14ea5646-e535-4f2a-a1f6-7e567c130ff1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.inventory_item:nth-child(1) > .inventory_item_description",
+      "targets": [
+        ["css=.inventory_item:nth-child(1) > .inventory_item_description", "css:finder"],
+        ["xpath=//div[@id='inventory_container']/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5fbfa44e-7554-4efc-87a5-51c0a40640e6",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.inventory_item:nth-child(1) .inventory_item_desc",
+      "targets": [],
+      "value": "carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection."
+    }, {
+      "id": "5c75ccbd-10b2-4785-af6e-05769574129c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.inventory_item:nth-child(3) .inventory_item_desc",
+      "targets": [
+        ["css=.inventory_item:nth-child(3) .inventory_item_desc", "css:finder"],
+        ["xpath=//div[@id='inventory_container']/div/div[3]/div[2]/div/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ffd97b58-3f81-476d-9766-f0e62d506d04",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.inventory_item:nth-child(3) .inventory_item_desc",
+      "targets": [],
+      "value": "Get your testing superhero on with the Sauce Labs bolt T-shirt. From American Apparel, 100% ringspun combed cotton, heather gray with red bolt."
+    }, {
+      "id": "7753f6d1-4036-4977-b564-6c68585ec087",
+      "comment": "",
+      "command": "click",
+      "target": "css=.inventory_item:nth-child(5) > .inventory_item_description",
+      "targets": [
+        ["css=.inventory_item:nth-child(5) > .inventory_item_description", "css:finder"],
+        ["xpath=//div[@id='inventory_container']/div/div[5]/div[2]", "xpath:idRelative"],
+        ["xpath=//div[5]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e8194ddd-19be-42f0-80f1-2e555274c45e",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.inventory_item:nth-child(5) .inventory_item_desc",
+      "targets": [],
+      "value": "Rib snap infant onesie for the junior automation engineer in development. Reinforced 3-snap bottom closure, two-needle hemmed sleeved and bottom won't unravel."
+    }, {
+      "id": "e3fd0601-609b-464a-bf72-1c26c09958ae",
+      "comment": "",
+      "command": "click",
+      "target": "css=.inventory_item:nth-child(2) .inventory_item_desc",
+      "targets": [
+        ["css=.inventory_item:nth-child(2) .inventory_item_desc", "css:finder"],
+        ["xpath=//div[@id='inventory_container']/div/div[2]/div[2]/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "99994cd3-e266-4ae1-8da5-6e44799d1550",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.inventory_item:nth-child(2) .inventory_item_desc",
+      "targets": [],
+      "value": "A red light isn't the desired state in testing but it sure helps when riding your bike at night. Water-resistant with 3 lighting modes, 1 AAA battery included."
+    }, {
+      "id": "eb7157ee-d59f-4aab-b40e-5f7e5a1688b6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.inventory_item:nth-child(4) .inventory_item_desc",
+      "targets": [
+        ["css=.inventory_item:nth-child(4) .inventory_item_desc", "css:finder"],
+        ["xpath=//div[@id='inventory_container']/div/div[4]/div[2]/div/div", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8b5a6353-9f92-44e3-abae-4176f2d7c115",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.inventory_item:nth-child(4) .inventory_item_desc",
+      "targets": [],
+      "value": "It's not every day that you come across a midweight quarter-zip fleece jacket capable of handling everything from a relaxing day outdoors to a busy day at the office."
+    }, {
+      "id": "786a30c1-bfcf-48c4-8275-9d342a2fa811",
+      "comment": "",
+      "command": "click",
+      "target": "css=.inventory_item:nth-child(6) > .inventory_item_description",
+      "targets": [
+        ["css=.inventory_item:nth-child(6) > .inventory_item_description", "css:finder"],
+        ["xpath=//div[@id='inventory_container']/div/div[6]/div[2]", "xpath:idRelative"],
+        ["xpath=//div[6]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9fca95b8-72fe-47e8-93d2-2b2d77aca385",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.inventory_item:nth-child(6) .inventory_item_desc",
+      "targets": [],
+      "value": "This classic Sauce Labs t-shirt is perfect to wear when cozying up to your keyboard to automate a few tests. Super-soft and comfy ringspun combed cotton."
+    }, {
+      "id": "8338ba84-ee01-471d-ab99-48dfea87683d",
+      "comment": "",
+      "command": "click",
+      "target": "id=react-burger-menu-btn",
+      "targets": [
+        ["id=react-burger-menu-btn", "id"],
+        ["css=#react-burger-menu-btn", "css:finder"],
+        ["xpath=//button[@id='react-burger-menu-btn']", "xpath:attributes"],
+        ["xpath=//div[@id='menu_button_container']/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Open Menu')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1b0d70ef-7f58-45b5-84d7-22f9952852ae",
+      "comment": "",
+      "command": "click",
+      "target": "id=logout_sidebar_link",
+      "targets": [
+        ["id=logout_sidebar_link", "id"],
+        ["linkText=Logout", "linkText"],
+        ["css=#logout_sidebar_link", "css:finder"],
+        ["xpath=//a[contains(text(),'Logout')]", "xpath:link"],
+        ["xpath=//a[@id='logout_sidebar_link']", "xpath:attributes"],
+        ["xpath=//div[@id='menu_button_container']/div/div[2]/div/nav/a[3]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[2]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Logout')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "7e5410ca-3e69-496e-a202-8c2bd4bd00a3",
+    "name": "test_text_locked",
+    "commands": [{
+      "id": "9f58bb42-44cb-4e6c-badd-edb4a585a42f",
+      "comment": "Open web site",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f60d3c5a-4ca0-4841-83d0-190b4442d80a",
+      "comment": "Change window size",
+      "command": "setWindowSize",
+      "target": "800x600",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b2eb6f1f-7a1d-4296-8616-9b7eaf7b371c",
+      "comment": "",
+      "command": "type",
+      "target": "id=user-name",
+      "targets": [
+        ["css=*[data-test=\"username\"]", "css:data-attr"],
+        ["id=user-name", "id"],
+        ["name=user-name", "name"],
+        ["css=#user-name", "css:finder"],
+        ["xpath=//input[@id='user-name']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "locked_out_user"
+    }, {
+      "id": "bdbbfe14-1b96-4fa7-928a-f2f92154ff0a",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["css=*[data-test=\"password\"]", "css:data-attr"],
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "secret_sauce"
+    }, {
+      "id": "1a9b5463-ca0e-4a11-8cff-eba481b2d22e",
+      "comment": "",
+      "command": "click",
+      "target": "css=*[data-test=\"login-button\"]",
+      "targets": [
+        ["css=*[data-test=\"login-button\"]", "css:data-attr"],
+        ["id=login-button", "id"],
+        ["name=login-button", "name"],
+        ["css=#login-button", "css:finder"],
+        ["xpath=//input[@id='login-button']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "153bc70e-a324-4317-882a-67b5a9f6f5ad",
+      "comment": "",
+      "command": "click",
+      "target": "css=.inventory_item:nth-child(1) > .inventory_item_description",
+      "targets": [
+        ["css=.inventory_item:nth-child(1) > .inventory_item_description", "css:finder"],
+        ["xpath=//div[@id='inventory_container']/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cac8291f-9ded-4ff6-92a9-89e428bfa555",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.inventory_item:nth-child(1) .inventory_item_desc",
+      "targets": [],
+      "value": "carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection."
+    }, {
+      "id": "e9be4584-ac51-4beb-8452-42794bfc502f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.inventory_item:nth-child(3) .inventory_item_desc",
+      "targets": [
+        ["css=.inventory_item:nth-child(3) .inventory_item_desc", "css:finder"],
+        ["xpath=//div[@id='inventory_container']/div/div[3]/div[2]/div/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0c29c776-5fe4-4cd4-bcc3-97fd30d335b0",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.inventory_item:nth-child(3) .inventory_item_desc",
+      "targets": [
+        ["css=.inventory_item:nth-child(3) .inventory_item_desc", "css:finder"],
+        ["xpath=//div[@id='inventory_container']/div/div[3]/div[2]/div/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div/div", "xpath:position"]
+      ],
+      "value": "Get your testing superhero on with the Sauce Labs bolt T-shirt. From American Apparel, 100% ringspun combed cotton, heather gray with red bolt."
+    }, {
+      "id": "3225223c-cd39-4aaa-9860-e302beeb9cd7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.inventory_item:nth-child(5) > .inventory_item_description",
+      "targets": [
+        ["css=.inventory_item:nth-child(5) > .inventory_item_description", "css:finder"],
+        ["xpath=//div[@id='inventory_container']/div/div[5]/div[2]", "xpath:idRelative"],
+        ["xpath=//div[5]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "11c128aa-335d-46be-8e34-c608693b8b8f",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.inventory_item:nth-child(5) .inventory_item_desc",
+      "targets": [
+        ["css=.inventory_item:nth-child(5) .inventory_item_desc", "css:finder"],
+        ["xpath=//div[@id='inventory_container']/div/div[5]/div[2]/div/div", "xpath:idRelative"],
+        ["xpath=//div[5]/div[2]/div/div", "xpath:position"]
+      ],
+      "value": "Rib snap infant onesie for the junior automation engineer in development. Reinforced 3-snap bottom closure, two-needle hemmed sleeved and bottom won't unravel."
+    }, {
+      "id": "cd490ecf-7e58-4ed1-b561-ce719abd02a0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.inventory_item:nth-child(2) .inventory_item_desc",
+      "targets": [
+        ["css=.inventory_item:nth-child(2) .inventory_item_desc", "css:finder"],
+        ["xpath=//div[@id='inventory_container']/div/div[2]/div[2]/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f2697961-4a27-406a-9870-e4fac6174b1a",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.inventory_item:nth-child(2) .inventory_item_desc",
+      "targets": [
+        ["css=.inventory_item:nth-child(2) .inventory_item_desc", "css:finder"],
+        ["xpath=//div[@id='inventory_container']/div/div[2]/div[2]/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div", "xpath:position"]
+      ],
+      "value": "A red light isn't the desired state in testing but it sure helps when riding your bike at night. Water-resistant with 3 lighting modes, 1 AAA battery included."
+    }, {
+      "id": "4e960d8a-124b-4295-bf2a-cfea8e064099",
+      "comment": "",
+      "command": "click",
+      "target": "css=.inventory_item:nth-child(4) .inventory_item_desc",
+      "targets": [
+        ["css=.inventory_item:nth-child(4) .inventory_item_desc", "css:finder"],
+        ["xpath=//div[@id='inventory_container']/div/div[4]/div[2]/div/div", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "204db8dd-5c48-4c0f-a513-85352267082c",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.inventory_item:nth-child(4) .inventory_item_desc",
+      "targets": [
+        ["css=.inventory_item:nth-child(4) .inventory_item_desc", "css:finder"],
+        ["xpath=//div[@id='inventory_container']/div/div[4]/div[2]/div/div", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/div/div", "xpath:position"]
+      ],
+      "value": "It's not every day that you come across a midweight quarter-zip fleece jacket capable of handling everything from a relaxing day outdoors to a busy day at the office."
+    }, {
+      "id": "6888d25b-d3b7-4e77-a3d5-b33a5b3252e5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.inventory_item:nth-child(6) > .inventory_item_description",
+      "targets": [
+        ["css=.inventory_item:nth-child(6) > .inventory_item_description", "css:finder"],
+        ["xpath=//div[@id='inventory_container']/div/div[6]/div[2]", "xpath:idRelative"],
+        ["xpath=//div[6]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6061c09a-9490-49fa-a963-dad29f79d64a",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.inventory_item:nth-child(6) .inventory_item_desc",
+      "targets": [
+        ["css=.inventory_item:nth-child(6) .inventory_item_desc", "css:finder"],
+        ["xpath=//div[@id='inventory_container']/div/div[6]/div[2]/div/div", "xpath:idRelative"],
+        ["xpath=//div[6]/div[2]/div/div", "xpath:position"]
+      ],
+      "value": "This classic Sauce Labs t-shirt is perfect to wear when cozying up to your keyboard to automate a few tests. Super-soft and comfy ringspun combed cotton."
+    }, {
+      "id": "ae5ae022-8d9a-4c21-8d40-b95ee7de87b5",
+      "comment": "",
+      "command": "click",
+      "target": "id=react-burger-menu-btn",
+      "targets": [
+        ["id=react-burger-menu-btn", "id"],
+        ["css=#react-burger-menu-btn", "css:finder"],
+        ["xpath=//button[@id='react-burger-menu-btn']", "xpath:attributes"],
+        ["xpath=//div[@id='menu_button_container']/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Open Menu')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "812498c9-da27-4c74-9e33-ca593a1a24f2",
+      "comment": "",
+      "command": "click",
+      "target": "id=logout_sidebar_link",
+      "targets": [
+        ["id=logout_sidebar_link", "id"],
+        ["linkText=Logout", "linkText"],
+        ["css=#logout_sidebar_link", "css:finder"],
+        ["xpath=//a[contains(text(),'Logout')]", "xpath:link"],
+        ["xpath=//a[@id='logout_sidebar_link']", "xpath:attributes"],
+        ["xpath=//div[@id='menu_button_container']/div/div[2]/div/nav/a[3]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[2]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Logout')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "71a13a89-1135-4fa7-8184-0797ecd23dfa",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["1fe18798-0ec1-408a-a7c0-f2fdf149247a"]
+  }],
+  "urls": ["https://www.saucedemo.com/"],
+  "plugins": []
+}
